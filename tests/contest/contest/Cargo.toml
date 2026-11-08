@@ -7,7 +7,7 @@ edition = "2024"
 anyhow = { workspace = true }
 flate2 = { workspace = true }
 libcgroups = { path = "../../../crates/libcgroups" }
-libcontainer = { path = "../../../crates/libcontainer" }
+libcontainer = { package = "nordisk-libcontainer", path = "../../../crates/libcontainer" }
 nix = { workspace = true }
 num_cpus = { workspace = true }
 oci-spec = { workspace = true }

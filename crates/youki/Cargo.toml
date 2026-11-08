@@ -27,7 +27,7 @@ clap = { workspace = true, features = ["std", "suggestions", "derive", "cargo", 
 anyhow = { workspace = true }
 chrono = { workspace = true, features = ["clock", "serde"] }
 libcgroups = { path = "../libcgroups", default-features = false, version = "0.7.0" } # MARK: Version
-libcontainer = { path = "../libcontainer", default-features = false, version = "0.7.0" } # MARK: Version
+libcontainer = { package = "nordisk-libcontainer", path = "../libcontainer", default-features = false, version = "0.7.0" } # MARK: Version
 liboci-cli = { workspace = true }
 nix = { workspace = true }
 pentacle = { workspace = true }

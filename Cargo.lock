@@ -681,8 +681,8 @@ dependencies = [
  "clap",
  "flate2",
  "libcgroups",
- "libcontainer",
  "nix 0.29.0",
+ "nordisk-libcontainer",
  "num_cpus",
  "oci-spec",
  "pnet_datalink",
@@ -2660,40 +2660,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "libcontainer"
-version = "0.7.0"
-dependencies = [
- "anyhow",
- "caps",
- "chrono",
- "fastrand",
- "libc",
- "libcgroups",
- "libseccomp",
- "nc",
- "netlink-packet-core",
- "netlink-packet-route",
- "netlink-sys",
- "nix 0.29.0",
- "oci-spec",
- "pathrs",
- "prctl",
- "procfs",
- "quickcheck",
- "rand 0.10.2",
- "regex",
- "rust-criu",
- "safe-path",
- "scopeguard",
- "serde",
- "serde_json",
- "serial_test",
- "tempfile",
- "thiserror 2.0.19",
- "tracing",
-]
-
-[[package]]
 name = "libloading"
 version = "0.8.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3103,6 +3069,40 @@ checksum = "d273983c5a657a70a3e8f2a01329822f3b8c8172b73826411a55751e404a0a4a"
 dependencies = [
  "memchr",
  "minimal-lexical",
+]
+
+[[package]]
+name = "nordisk-libcontainer"
+version = "0.7.0"
+dependencies = [
+ "anyhow",
+ "caps",
+ "chrono",
+ "fastrand",
+ "libc",
+ "libcgroups",
+ "libseccomp",
+ "nc",
+ "netlink-packet-core",
+ "netlink-packet-route",
+ "netlink-sys",
+ "nix 0.29.0",
+ "oci-spec",
+ "pathrs",
+ "prctl",
+ "procfs",
+ "quickcheck",
+ "rand 0.10.2",
+ "regex",
+ "rust-criu",
+ "safe-path",
+ "scopeguard",
+ "serde",
+ "serde_json",
+ "serial_test",
+ "tempfile",
+ "thiserror 2.0.19",
+ "tracing",
 ]
 
 [[package]]
@@ -7314,9 +7314,9 @@ dependencies = [
  "clap",
  "clap_complete",
  "libcgroups",
- "libcontainer",
  "liboci-cli",
  "nix 0.29.0",
+ "nordisk-libcontainer",
  "oci-spec",
  "pentacle",
  "pkg-config",

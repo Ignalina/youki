@@ -1,15 +1,20 @@
+# nordisk-libcontainer: a temporary fork of youki's libcontainer 0.7.0 that adds
+# only the SeccompBackend trait (youki PR #3873). See README.md.
 [package]
-name = "libcontainer"
+name = "nordisk-libcontainer"
 version = "0.7.0" # MARK: Version
-description = "Library for container control"
+description = "Temporary fork of youki's libcontainer 0.7.0 with only the SeccompBackend trait added (youki PR #3873)"
 license = "Apache-2.0"
-repository = "https://github.com/youki-dev/youki"
+repository = "https://github.com/Ignalina/youki/tree/feat/seccomp-backend-trait"
 homepage = "https://youki-dev.github.io/youki/"
 readme = "README.md"
 authors = ["youki team"]
 edition = "2024"
 rust-version = "1.85.0"
 keywords = ["youki", "container", "cgroups"]
+
+[lib]
+name = "libcontainer"
 
 [features]
 default = ["systemd", "v2", "v1", "libseccomp"]
